@@ -1,6 +1,6 @@
 return {
-	entry = function(_, args)
-		local block = args[1] and args[1] == "block"
+	entry = function(_, job)
+		local block = job.args[1] and job.args[1] == "block"
 
 		local value, event = ya.input({
 			title = block and "Open with (block):" or "Open with:",
