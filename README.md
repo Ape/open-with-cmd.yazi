@@ -23,3 +23,12 @@ on   = "O"
 run  = "plugin open-with-cmd"
 desc = "Open with command"
 ```
+Add alias list to the ~/.config/yazi/plugins/open-with-cmd.yazi/main.lua file
+
+eg:
+```lua
+    local alias_map = {
+      ["na"] = "NVIM_APPNAME=AstroNvim nvim",
+      ["emacs"] = "emacs -nw",
+    }
+```
