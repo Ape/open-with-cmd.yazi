@@ -4,7 +4,7 @@ return {
 
 		local value, event = ya.input({
 			title = block and "Open with (block):" or "Open with:",
-			position = { "hovered", y = 1, w = 50 },
+			pos = { "hovered", y = 1, w = 50 },
 		})
 
 		if event == 1 then
